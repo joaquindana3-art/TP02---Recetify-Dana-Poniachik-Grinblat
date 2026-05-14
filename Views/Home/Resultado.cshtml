@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Resultado";
+}
+<h1>Resultados:</h1>
+<p>Nombre del cocinero: @ViewBag.datos.Nombre</p>
+<p>Edad del cocinero: @ViewBag.datos.CalcularEdad()</p>
+<p>Plato sugerido: @ViewBag.datos.DeterminarPlato()</p>
+<p>Tiempo de preparacion aproximado: @ViewBag.datos.CalcularTiempo()</p>
+<p>Cantidad de personas: @ViewBag.datos.CantComensales</p>
+<p>Dificultad del plato: @ViewBag.datos.DeterminarDificultad()</p>

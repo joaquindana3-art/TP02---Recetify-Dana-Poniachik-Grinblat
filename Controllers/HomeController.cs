@@ -18,6 +18,14 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult GenerarSugerencia(SugeridorReceta datos)
+    {
+
+        ViewBag.datos = datos;
+        return View("Resultado");
+        
+    }
+
     public IActionResult Privacy()
     {
         return View();

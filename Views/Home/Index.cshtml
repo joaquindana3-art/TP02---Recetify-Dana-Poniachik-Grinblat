@@ -1,8 +1,14 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Recetify</h1>
+<form action="@Url.Action("GenerarSugerencia", "Home")" method="get">
+  Nombre: <input type="text" name="Nombre"> </br>
+  Fecha de nacimiento: <input type="date" name="FechaNacimiento"></br>
+  Tipo de comida:</br>
+  <input type="radio" name="TipoComida" value="Caliente"> Caliente</br>
+  <input type="radio" name="TipoComida" value="Fria"> Frio</br>
+  Presupuesto: <input type="number" name="Presupuesto" min="0"></br>
+  Cantidad de personas: <input type="number" name="CantComensales" min="1" max="20"></br>
+  <input type="submit" value="Submitir">
+</form>
