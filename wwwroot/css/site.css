@@ -12,6 +12,22 @@ html {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
 
+body{
+  background-color: rgb(26, 97, 58);
+}
+
+h1{
+  color: rgb(20, 20, 151);
+}
+form{
+  color: rgb(104, 18, 131);
+}
+div{
+    background-color: rgb(104, 143, 175);
+}
+p{
+  color: blanchedalmond;
+}
 html {
   position: relative;
   min-height: 100%;

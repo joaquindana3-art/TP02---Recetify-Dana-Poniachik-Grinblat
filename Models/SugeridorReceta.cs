@@ -14,24 +14,24 @@ public class SugeridorReceta{
         DateTime fechaActual = DateTime.Today;
         if (FechaNacimiento.Month < fechaActual.Month) {
 
-            edad = FechaNacimiento.Year - fechaActual.Year;
+            edad = fechaActual.Year - FechaNacimiento.Year ;
 
         }
         else if (FechaNacimiento.Month > fechaActual.Month) {
 
-            edad = FechaNacimiento.Year - fechaActual.Year - 1;
+            edad = fechaActual.Year - 1 - FechaNacimiento.Year ;
 
         }
         else {
 
             if (FechaNacimiento.Day <= fechaActual.Day) {
 
-                edad = FechaNacimiento.Year - fechaActual.Year;
+                edad = fechaActual.Year - FechaNacimiento.Year ;
 
             }
             else {
 
-                edad = FechaNacimiento.Year - fechaActual.Year - 1;
+                edad = fechaActual.Year - 1 - FechaNacimiento.Year ;
 
             }
 
